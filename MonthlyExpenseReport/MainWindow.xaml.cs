@@ -29,5 +29,17 @@ namespace MonthlyExpenseReport
             Income inc = new Income();
             inc.Show();
         }
+
+        private void billButton_Click(object sender, RoutedEventArgs e)
+        {
+            billPage bp = new billPage();
+            billFrame.NavigationService.Navigate(bp);
+        }
+
+        private void addBillItem_Click(object sender, RoutedEventArgs e)
+        {
+            billPage bp = new billPage();
+            billFrame.NavigationService.Navigate(bp);
+        }
     }
 }

@@ -7,8 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="billButton" Content="Bills" HorizontalAlignment="Left" Margin="136,156,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="IncomeButton" Content="Income" HorizontalAlignment="Left" Margin="136,107,0,0" VerticalAlignment="Top" Width="75" Click="IncomeButton_Click"/>
+        <Frame x:Name="billFrame" Content="" Height="287" Margin="0,22,0,0" VerticalAlignment="Top" NavigationUIVisibility="Hidden"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="17" VerticalAlignment="Top" Width="469">
+            <MenuItem Header="Income" Height="16">
+                <MenuItem Header="Add Income" Height="16" Width="150"/>
+            </MenuItem>
+            <MenuItem Header="Bills" Height="16">
+                <MenuItem Name="addBillItem" Click="addBillItem_Click" Header="Add Bill" Height="16" Width="150"/>
+            </MenuItem>
+        </Menu>
 
     </Grid>
 </Window>
